@@ -32,7 +32,7 @@ import com.example.artspace.ui.theme.ArtSpaceTheme
 
 class MainActivity : ComponentActivity() {
 
-  private val images = arrayOf(AN1963_10_102(), AN2014_136_117(), AN1963_10_109())
+  private val images = arrayOf(AN1963_10_102, AN2014_136_117, AN1963_10_109)
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun ArtSpaceApp(
   modifier: Modifier = Modifier,
-  images: Array<ArtSpaceImage> = arrayOf(AN1963_10_102(), AN2014_136_117()),
+  images: Array<ArtSpaceImage> = arrayOf(AN1963_10_102, AN2014_136_117, AN1963_10_109),
   ) {
 
   val n = images.size
